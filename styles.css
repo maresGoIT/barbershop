@@ -1,16 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+
 :root {
   --link-color: #ffffff;
+  --text-active: #ff6c00;
+  --link-active-color: #ff6c00;
+  --text-font-family: "Open Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+  --text-color: #9da4bd;
+  --text-alternate-color: ##303030;
+  --subheading-color: #9da4bd;
+  --heading-color: #ffffff;
+  --heading-alternate-color: #303030;
 }
 
+body {
+  font-family: var(--text-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Global Header */
 .global-header {
   background: #363636;
 }
 
-.global-header .main-navigation a,
-.global-header .main-navigation a:visited {
+.global-header a {
   color: var(--link-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
 }
 
-.global-header .main-navigation a.active {
-  color: #ff6c00;
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
+  letter-spacing: 0.1em;
+}
+
+.global-header a.active {
+  color: var(--link-active-color);
+}
+
+.global-header a.social-links {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+.global-header .main-navigation .phone-number {
+  text-transform: uppercase;
+}
+
+.hero-heading {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: var(--heading-color);
+}
+
+.hero-section {
+  background: #363636;
+}
+
+.section-heading {
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.section {
+  background: #363636;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+}
+
+.section address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.section address a {
+  color: var(--text-color);
+}
+
+.section address a:hover,
+.section address a:focus {
+  color: var(--link-color);
+}
+.section h3 {
+  color: var(--text-color);
+}
+
+.section h1,
+.section h2 {
+  color: var(--heading-color);
+}
+
+.section-with-light-bg {
+  background: #ffffff;
+  color: #555555;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section-with-light-bg h1,
+.section-with-light-bg h2,
+.section-with-light-bg h3 {
+  color: var(--heading-alternate-color);
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.section-with-gray-bg {
+  background: #f7f7f7;
+}
+
+/* List */
+.barbers-list li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.barbers-list li em {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-active);
+}
+
+.services-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.no-underline {
+  text-decoration: none;
 }
