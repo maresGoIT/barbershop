@@ -158,6 +158,12 @@ a.social-link:focus {
   color: var(--link-social--hover-color);
 }
 
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Section Generic */
 .section {
   background: #363636;
@@ -172,6 +178,10 @@ a.social-link:focus {
   line-height: 49.31px;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+.section-heading + * {
+  margin-top: 20px;
 }
 
 .section address {
@@ -190,7 +200,7 @@ a.social-link:focus {
 .section address a:focus {
   color: var(--link-color);
 }
-.section h3 {
+.section .section-sub-heading {
   font-size: 11px;
   line-height: 14.98px;
   color: var(--subheading-color);
@@ -211,8 +221,8 @@ a.social-link:focus {
 }
 
 .section--light h1,
-.section--light h2,
-.section--light h3 {
+.section--light .section-heading,
+.section--light .section-sub-heading {
   color: var(--heading-alternate-color);
 }
 
@@ -389,8 +399,10 @@ a.social-link:focus {
   margin-left: 6px;
 }
 
-.centered-content {
+/* Motto */
+.motto-cards {
+  margin-top: 40px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
 }
