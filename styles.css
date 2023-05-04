@@ -7,6 +7,9 @@
   --link-active-color: #ff6c00;
   --link-social-color: #303030;
   --link-social--hover-color: #ff6c00;
+  --social-icon-color: #303030;
+  --social-icon--hover-color: #ff6c00;
+
   --text-font-family: "Open Sans", sans-serif;
   --heading-font-family: "Raleway", sans-serif;
   --text-color: #9da4bd;
@@ -480,6 +483,11 @@ a.social-link:focus {
   font-style: normal;
 }
 
+.contacts-address .contact-address-item svg {
+  height: 24px;
+  width: 24px;
+}
+
 .working-hours {
   margin-top: 70px;
 }
@@ -490,4 +498,30 @@ a.social-link:focus {
 
 .contact-section {
   background: url("./images/contact-section-bg.webp") #191c26;
+}
+
+.icons-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  color: var(--social-icon-color);
+}
+
+.icons-list .icon:hover,
+.icons-list .icon:focus {
+  color: var(--social-icon--hover-color);
+}
+
+.icons-list .icon svg {
+  height: 20px;
+  width: 20px;
 }

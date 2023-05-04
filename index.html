@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Hero Section -->
@@ -237,18 +238,84 @@
               <img src="./images/barber_john-smith.jpg" alt="John Smith" /><br />
               <span>John Smith<br /></span>
               <em>Extreme Barber</em>
+              <div class="icons-list">
+                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
 
             <li>
               <img src="./images/barber_michele-doe.png" alt="John Smith" /><br />
               Michele Doe<br />
               <em>Extreme Barber</em>
+              <div class="icons-list">
+                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
 
             <li>
               <img src="./images/barber_alan-black.png" alt="John Smith" /><br />
               Alan Black<br />
               <em>Extreme Barber</em>
+              <div class="icons-list">
+                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                  <svg>
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -283,13 +350,16 @@
             <h2>Contacts</h2>
             <address class="contacts-address">
               <span class="contact-address-item">
-                <img src="./images/icon_map.svg" /> Main Street, 7A Kyiv, 08132
+                <i data-feather="map-pin"></i>
+                Main Street, 7A Kyiv, 08132
               </span>
               <a class="contact-address-item link" href="tel:+380441111111">
-                <img src="./images/icon_phone.svg" />+38 044 111 11 11
+                <i data-feather="phone"></i>
+                +38 044 111 11 11
               </a>
               <a class="contact-address-item link" href="mailto:barbershop@email.com">
-                <img src="./images/icon_email.svg" />barbershop@email.com
+                <i data-feather="mail"></i>
+                barbershop@email.com
               </a>
             </address>
             <div class="working-hours">
@@ -332,5 +402,9 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
