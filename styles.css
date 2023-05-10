@@ -16,6 +16,7 @@
   --subheading-color: #9da4bd99;
   --heading-color: #ffffff;
   --heading-alternate-color: #303030;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -57,6 +58,10 @@ ul {
   line-height: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+a {
+  transition: color var(--transition);
 }
 
 .global-aside {
@@ -111,8 +116,34 @@ img.dash {
   padding: 0;
 }
 
-.global-header-book-btn {
+.book-a-service-btn {
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #ffffff;
   margin-left: 40px;
+  outline: none;
+  padding: 12px 24px;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.book-a-service-btn:focus,
+.book-a-service-btn:hover {
+  background-color: #ff6c00;
+}
+
+main .book-a-service-btn {
+  margin-left: 0;
+}
+
+.section--light .book-a-service-btn {
+  color: #303030;
+}
+
+.section--light .book-a-service-btn:focus,
+.section--light .book-a-service-btn:hover {
+  color: #ffffff;
 }
 
 .global-header .main-navigation {
@@ -527,4 +558,51 @@ a.social-link:focus {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(25, 28, 38, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform var(--transition);
+}
+
+.modal-content {
+  padding: 16px;
+  background: #fff;
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+}
+
+.is-hidden {
+  transform: scale(1.1);
+  visibility: hidden;
+}
+
+.close-btn {
+  background: red;
+  border: 1px solid #b01212;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  transition: color var(--transition);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background: #c61111;
 }

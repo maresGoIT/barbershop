@@ -55,7 +55,7 @@
               </ul>
               <div>
                 <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="button global-header-book-btn">BOOK A SERVICE</button>
+                <button data-modal-open class="button book-a-service-btn">BOOK A SERVICE</button>
               </div>
             </nav>
           </div>
@@ -111,7 +111,7 @@
                   to improve everyone who comes to us!
                 </p>
               </div>
-              <button class="button">Book a service</button>
+              <button data-modal-open class="button book-a-service-btn">Book a service</button>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button">Book a service</button>
+            <button class="button book-a-service-btn">Book a service</button>
           </div>
         </div>
       </section>
@@ -349,10 +349,13 @@
           <section id="contacts" class="section contact-section">
             <h2>Contacts</h2>
             <address class="contacts-address">
-              <a class="contact-address-item link" href="https://goo.gl/maps/v32BDD3dRUhPxnXa9?coh=178571&entry=tt">
+              <a
+                class="contact-address-item link"
+                href="https://goo.gl/maps/v32BDD3dRUhPxnXa9?coh=178571&entry=tt"
+              >
                 <i data-feather="map-pin"></i>
                 Main Street, 7A Kyiv, 08132
-              </span>
+              </a>
               <a class="contact-address-item link" href="tel:+380441111111">
                 <i data-feather="phone"></i>
                 +38 044 111 11 11
@@ -403,6 +406,15 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        Continutul modalului
+      </div>
+    </div>
+
+    <script src="./js/modal.js" type="text/javascript"></script>
     <script>
       feather.replace();
     </script>
