@@ -639,6 +639,7 @@ a.social-link:focus {
   font-size: 11px;
   top: -8px;
   left: 0;
+  transition: top var(--transition);
 }
 
 .form .input::placeholder {
@@ -659,10 +660,12 @@ a.social-link:focus {
   padding: 8px 0;
   color: rgba(157, 164, 189, 0.4);
   width: 100%;
+  transition: border var(--transition), color var(--transition);
 }
 
 .form .input:placeholder-shown ~ .label-text {
   display: none;
+  top: 0;
 }
 
 .form .input:focus {
