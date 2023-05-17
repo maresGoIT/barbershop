@@ -2,6 +2,7 @@
 
 :root {
   --link-color: #ffffff;
+  --accent-color: #ff6c00;
   --text-active: #ff6c00;
   --link-hover-color: #f0883e;
   --link-active-color: #ff6c00;
@@ -45,6 +46,10 @@ h2 {
 
 ul {
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -498,7 +503,6 @@ a.social-link:focus {
 }
 
 .button-transparent {
-  margin-top: 232px;
   outline: none;
   background: transparent;
   border: 1px solid #ff6c00;
@@ -514,6 +518,11 @@ a.social-link:focus {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.button-transparent:hover,
+.button-transparent:focus {
+  background: var(--accent-color);
 }
 
 .booking-form {
@@ -661,6 +670,10 @@ a.social-link:focus {
   border-color: white;
 }
 
+.form .input:required ~ .label-text::after {
+  content: "*";
+}
+
 .form .input:focus::placeholder {
   color: white;
 }
@@ -670,6 +683,7 @@ a.social-link:focus {
 }
 
 .form .form-group {
+  flex: 1;
   position: relative;
 }
 
@@ -680,14 +694,14 @@ a.social-link:focus {
 }
 
 .form-modal .form-group {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .form-modal .form-group .label-text {
-  text-align: left;
   flex: 1;
   order: 1;
+  text-align: left;
 }
 
 .form-modal .form-group .input {
@@ -696,10 +710,10 @@ a.social-link:focus {
 }
 
 .form-modal .input {
-  padding: 8px 12px;
   border: 2px solid var(--heading-alternate-color);
   border-radius: 8px;
   outline: none;
+  padding: 8px 12px;
 }
 
 .form-modal .input:focus {
@@ -760,4 +774,52 @@ a.social-link:focus {
 .telephone-number .telephone-input-wrapper {
   order: 2;
   flex: 2;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px;
+}
+
+.footer-content .copyrighted-text {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #595d6a;
+}
+
+.footer-content .footer-link-list {
+  align-content: center;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.footer-content .footer-link-list::before {
+  content: "";
+  background: #303030;
+  height: 1px;
+  width: 60px;
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+.footer-content .footer-link-list li a {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #303030;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border var(--transition);
+}
+
+.footer-content .footer-link-list li a:hover,
+.footer-content .footer-link-list li a:focus {
+  border-bottom: 1px solid #303030;
 }
