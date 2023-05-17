@@ -581,7 +581,9 @@ a.social-link:focus {
   background: #fff;
   width: 50%;
   margin: 0 auto;
+  padding: 40px;
   height: 500px;
+  text-align: center;
   position: relative;
 }
 
@@ -605,4 +607,157 @@ a.social-link:focus {
 .close-btn:hover,
 .close-btn:focus {
   background: #c61111;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+
+.form .label-text {
+  color: rgba(157, 164, 189, 0.4);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 11px;
+  top: -8px;
+  left: 0;
+}
+
+.form .input::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 11px;
+  top: 16px;
+}
+
+.form .input {
+  appearance: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 8px 0;
+  color: rgba(157, 164, 189, 0.4);
+  width: 100%;
+}
+
+.form .input:placeholder-shown ~ .label-text {
+  display: none;
+}
+
+.form .input:focus {
+  color: white;
+  border-color: white;
+}
+
+.form .input:focus::placeholder {
+  color: white;
+}
+
+.form .input:focus ~ .label-text {
+  color: white;
+}
+
+.form .form-group {
+  position: relative;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-modal .form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-modal .form-group .label-text {
+  text-align: left;
+  flex: 1;
+  order: 1;
+}
+
+.form-modal .form-group .input {
+  flex: 2;
+  order: 2;
+}
+
+.form-modal .input {
+  padding: 8px 12px;
+  border: 2px solid var(--heading-alternate-color);
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-modal .input:focus {
+  border: 2px solid royalblue;
+}
+
+.form-modal .form-group:focus-within > .label-text {
+  color: royalblue;
+  font-weight: bold;
+}
+
+.form-modal .input:required ~ .label-text::after {
+  content: "*";
+}
+
+.form-modal .submit-btn {
+  max-width: 120px;
+  align-self: flex-end;
+}
+
+.telephone-number {
+  display: flex;
+  width: 100%;
+}
+
+.telephone-number input,
+.telephone-number select {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.telephone-number input {
+  width: 100%;
+}
+
+.telephone-number select {
+  width: 50px;
+  background: royalblue;
+  color: white;
+}
+
+.telephone-number .telephone-input-wrapper {
+  overflow: hidden;
+  padding-right: 12px;
+  border: 2px solid var(--heading-alternate-color);
+  border-radius: 8px;
+  outline: none;
+  display: flex;
+}
+
+.telephone-number .label-text {
+  flex: 1;
+}
+
+.telephone-number .telephone-input-wrapper {
+  order: 2;
+  flex: 2;
 }

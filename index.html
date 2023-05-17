@@ -342,7 +342,31 @@
           <!-- Book a section -->
           <section class="section booking-form">
             <h2>Book a Service</h2>
-            <button class="button-transparent">Send</button>
+
+            <form class="form" name="book-a-service">
+              <div class="form-row">
+                <label class="form-group">
+                  <input placeholder="Name*" class="input" type="text" name="name" required />
+                  <span class="label-text">Name*</span>
+                </label>
+
+                <label class="form-group">
+                  <input
+                    placeholder="Telephone*"
+                    class="input"
+                    type="tel"
+                    name="telephone"
+                    required
+                  />
+                  <span class="label-text">Telephone*</span>
+                </label>
+              </div>
+              <label class="form-group">
+                <textarea placeholder="Message" class="input" name="message" rows="3"></textarea>
+                <span class="label-text">Message</span>
+              </label>
+              <button type="submit" class="button-transparent">Send</button>
+            </form>
           </section>
 
           <!-- Contacts -->
@@ -410,7 +434,32 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="close-btn" data-modal-close>&times;</button>
-        Continutul modalului
+
+        <form class="form-modal" name="contact-form">
+          <h3>Add your details</h3>
+          <label class="form-group">
+            <input class="input" type="text" name="firstName" required />
+            <span class="label-text">First Name</span>
+          </label>
+          <label class="form-group">
+            <input class="input" type="text" name="lastName" />
+            <span class="label-text">Last Name</span>
+          </label>
+          <label class="form-group">
+            <div class="telephone-number">
+              <span class="label-text">Telephone</span>
+              <div class="telephone-input-wrapper">
+                <select name="countryCode">
+                  <option value="ro">+4</option>
+                  <option value="hu">+36</option>
+                  <option value="it">+39</option>
+                </select>
+                <input class="telephone-code" type="number" name="phone" />
+              </div>
+            </div>
+          </label>
+          <button class="submit-btn" type="submit">Book now</button>
+        </form>
       </div>
     </div>
 
