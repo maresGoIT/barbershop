@@ -1,0 +1,22 @@
+$dark-text: #303030;
+$accent-color: #ff6c00;
+
+:root {
+  --link-color: #ffffff;
+  --accent-color: $accent-color;
+  --text-active: #ff6c00;
+  --link-hover-color: #f0883e;
+  --link-active-color: #ff6c00;
+  --link-social-color: $dark-text;
+  --link-social--hover-color: #ff6c00;
+  --social-icon-color: #303030;
+  --social-icon--hover-color: #ff6c00;
+  --text-font-family: "Open Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+  --text-color: #9da4bd;
+  --text-alternate-color: ##303030;
+  --subheading-color: #9da4bd99;
+  --heading-color: #ffffff;
+  --heading-alternate-color: #303030;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

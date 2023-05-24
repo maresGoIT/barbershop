@@ -10,20 +10,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Hero Section -->
-    <div class="container header-container">
+    <div class="container container--header">
       <!-- Logo and Social Links -->
       <aside class="global-aside">
-        <a href="index.html">
+        <a class="link" href="index.html">
           <img src="images/logo.svg" alt="Logo" />
         </a>
-        <div class="global-aside-links">
+        <div class="global-aside__links">
           <a
-            class="link social-link"
+            class="link link--social"
             href="https://youtube.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -31,40 +31,43 @@
             Youtube
           </a>
           <a
-            class="link social-link"
+            class="link link--social"
             href="https://instagram.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
             Instagram
           </a>
-          <img class="global-aside-separator" src="images/header_section-divider.png" alt="|" />
+          <img class="global-aside__separator" src="images/header_section-divider.png" alt="|" />
         </div>
       </aside>
 
-      <div class="header-container-content">
+      <div class="hero">
         <!-- Header -->
         <header class="global-header">
-          <div class="global-header-container">
-            <nav class="main-navigation">
-              <ul>
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#services">Services and Prices</a></li>
-                <li><a href="#barbers">Barbers</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-              </ul>
-              <div>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button data-modal-open class="button book-a-service-btn">BOOK A SERVICE</button>
-              </div>
-            </nav>
-          </div>
+          <nav class="global-header__nav">
+            <ul class="global-header__menu">
+              <li class="global-header__menu-item">
+                <a href="#about" class="link link--active link--global-header">About</a>
+              </li>
+              <li class="global-header__menu-item">
+                <a href="#services" class="link">Services and Prices</a>
+              </li>
+              <li class="global-header__menu-item"><a href="#barbers" class="link">Barbers</a></li>
+              <li class="global-header__menu-item">
+                <a href="#contacts" class="link">Contacts</a>
+              </li>
+            </ul>
+            <div>
+              <a class="link link--phone-number" href="tel:+380441111111">+38 044 111 11 11</a>
+              <button data-modal-open class="button button--book-a-service">BOOK A SERVICE</button>
+            </div>
+          </nav>
         </header>
 
-        <section class="section global-header-content">
-          <div class="section-description">
-            <div class="heading-with-dash">
-              <img src="images/dash-light.png" alt="-" class="dash" />
+        <section class="section section--hero-section">
+          <div class="section__description">
+            <div class="section__subheading">
               <h3>
                 <span>A hair salon for men in Kyiv</span>
               </h3>
@@ -75,7 +78,7 @@
               We work quickly, carefully, and tastefully.
             </p>
           </div>
-          <div class="control-buttons">
+          <div class="form__control-buttons">
             <button>Prev</button>
             <button>Next</button>
           </div>
@@ -86,18 +89,17 @@
     <!-- Main Content -->
     <main>
       <!-- About -->
-      <section id="about" class="section section--light about-section">
+      <section id="about" class="section section--light">
         <div class="container">
-          <div class="section-with-two-columns">
+          <div class="section--with-two-columns">
             <div class="section-images">
               <img src="images/about_img1.jpg" alt="Frizer tunde barba" />
               <img src="images/about_img2.png" alt="Frizer taie barba" />
             </div>
             <div>
-              <div class="section-description">
-                <div class="heading-with-dash">
-                  <img src="images/dash-dark.png" alt="-" class="dash" />
-                  <h3 class="section-sub-heading">About</h3>
+              <div class="section__description">
+                <div class="section__subheading">
+                  <h3 class="section__subheading-text">About</h3>
                 </div>
                 <h2 class="section-heading">The Best Barbershop in Your City</h2>
                 <p>
@@ -111,7 +113,9 @@
                   to improve everyone who comes to us!
                 </p>
               </div>
-              <button data-modal-open class="button book-a-service-btn">Book a service</button>
+              <button data-modal-open class="button button--book-a-service button--about-section">
+                Book a service
+              </button>
             </div>
           </div>
         </div>
@@ -120,10 +124,12 @@
       <!-- Services and Prices -->
       <section id="services" class="section section--dark prices-section">
         <div class="container">
-          <div class="section-description">
-            <div class="heading-with-dash">
-              <img src="images/dash-light.png" alt="-" class="dash" />
-              <h3 class="section-sub-heading">Spend time in the company of the best craftsmen</h3>
+          <div class="section__description">
+            <div class="section__subheading">
+              <img src="images/dash-light.png" alt="-" class="section__subheading-dash" />
+              <h3 class="section__subheading-text">
+                Spend time in the company of the best craftsmen
+              </h3>
             </div>
             <h2 class="section-heading">Services and Prices</h2>
           </div>
@@ -181,7 +187,7 @@
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button book-a-service-btn">Book a service</button>
+            <button class="button button--book-a-service">Book a service</button>
           </div>
         </div>
       </section>
@@ -189,7 +195,7 @@
       <!-- Old school -->
       <section class="section section--light why-us-section">
         <div class="container">
-          <div class="section-with-two-columns">
+          <div class="section--with-two-columns">
             <div>
               <div class="why-us-list">
                 <div class="feature">
@@ -211,9 +217,8 @@
               </div>
             </div>
             <article>
-              <div class="heading-with-dash">
-                <img src="images/dash-dark.png" alt="-" class="dash" />
-                <h3 class="section-sub-heading">Old school</h3>
+              <div class="section__subheading">
+                <h3 class="section__subheading-text">Old school</h3>
               </div>
               <h2 class="section-heading">Services and Prices</h2>
               <p>
@@ -228,9 +233,8 @@
       <!-- Our Barbers -->
       <section id="barbers" class="section section--light section-with-gray-bg">
         <div class="container">
-          <div class="heading-with-dash">
-            <img src="images/dash-dark.png" alt="-" class="dash" />
-            <h3 class="section-sub-heading">for true connoisseurs of the atmosphere</h3>
+          <div class="section__subheading">
+            <h3 class="section__subheading-text">for true connoisseurs of the atmosphere</h3>
           </div>
           <h2 class="section-heading">Our Barbers</h2>
           <ul class="barbers-list">
@@ -239,22 +243,22 @@
               <span>John Smith<br /></span>
               <em>Extreme Barber</em>
               <div class="icons-list">
-                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                <a href="https://instagram.com" class="icon link" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                <a href="https://twitter.com" class="icon link" aria-label="Twitter">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                <a href="https://facebook.com" class="icon link" aria-label="Facebook">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                <a href="https://linkedin.com" class="icon link" aria-label="LinkedIn">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -267,22 +271,22 @@
               Michele Doe<br />
               <em>Extreme Barber</em>
               <div class="icons-list">
-                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                <a href="https://instagram.com" class="link icon" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                <a href="https://twitter.com" class="link icon" aria-label="Twitter">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                <a href="https://facebook.com" class="link icon" aria-label="Facebook">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                <a href="https://linkedin.com" class="link icon" aria-label="LinkedIn">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -295,22 +299,22 @@
               Alan Black<br />
               <em>Extreme Barber</em>
               <div class="icons-list">
-                <a href="https://instagram.com" class="icon" aria-label="Instagram">
+                <a href="https://instagram.com" class="link icon" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a href="https://twitter.com" class="icon" aria-label="Twitter">
+                <a href="https://twitter.com" class="link icon" aria-label="Twitter">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a href="https://facebook.com" class="icon" aria-label="Facebook">
+                <a href="https://facebook.com" class="link icon" aria-label="Facebook">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a href="https://linkedin.com" class="icon" aria-label="LinkedIn">
+                <a href="https://linkedin.com" class="link icon" aria-label="LinkedIn">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -324,9 +328,8 @@
       <!-- Motto -->
       <section class="section section--light">
         <div class="container">
-          <div class="heading-with-dash">
-            <img src="images/dash-dark.png" alt="-" class="dash" />
-            <h3 class="section-sub-heading">In Latin, "barba" means "beard"</h3>
+          <div class="section__subheading">
+            <h3 class="section__subheading-text">In Latin, "barba" means "beard"</h3>
           </div>
           <ul class="motto-cards">
             <li><img src="./images/motto_img1.png" alt="Frizer tunde parul" /></li>
@@ -365,7 +368,7 @@
                 <textarea placeholder="Message" class="input" name="message" rows="3"></textarea>
                 <span class="label-text">Message</span>
               </label>
-              <button type="submit" class="button-transparent">Send</button>
+              <button type="submit" class="button button-transparent">Send</button>
             </form>
           </section>
 
@@ -390,7 +393,7 @@
               </a>
             </address>
             <div class="working-hours">
-              <h3 class="subheading-with-dash">working hours</h3>
+              <h3 class="section__subheading">working hours</h3>
               <p>
                 Daily from <time datetime="9:00AM">9:00 AM</time> till
                 <time datetime="9:00AM">22:00 PM</time>
@@ -435,7 +438,7 @@
     <!-- Modal -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-btn" data-modal-close>&times;</button>
+        <button class="button close-btn" data-modal-close>&times;</button>
 
         <form class="form-modal" name="contact-form" autocomplete="off">
           <h3>Add your details</h3>
@@ -460,7 +463,7 @@
               </div>
             </div>
           </label>
-          <button class="submit-btn" type="submit">Book now</button>
+          <button class="button submit-btn" type="submit">Book now</button>
         </form>
       </div>
     </div>
