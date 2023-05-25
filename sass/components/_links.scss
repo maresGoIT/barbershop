@@ -1,0 +1,69 @@
+.link,
+.link:visited {
+  color: var(--link-color);
+  font-family: "Open Sans";
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: color var(--transition);
+
+  &:focus,
+  &:hover {
+    color: var(--link-color--hover);
+  }
+}
+
+.link--uppercase {
+  text-transform: uppercase;
+}
+
+.link--active {
+  color: var(--link-color--active);
+}
+
+.link--from-aside,
+.link--from-aside:visited {
+  color: var(--link-from-aside-color);
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  padding: 20px 0;
+  transform: rotate(-90deg);
+
+  &:hover,
+  &:focus {
+    color: var(--link-from-aside-color--hover);
+  }
+}
+
+.link--from-address {
+  gap: 20px;
+  display: flex;
+  color: var(--link-address-color);
+  cursor: pointer;
+
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--link-address-color--hover);
+  }
+}
+
+.link--from-footer,
+.link--from-footer:visited {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--link-footer-color);
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: var(--link-footer-color--hover);
+  }
+}

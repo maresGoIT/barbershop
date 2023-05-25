@@ -1,0 +1,33 @@
+.slider-controls {
+  margin-top: 142px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-controls__button {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  color: rgba(157, 164, 189, 0.6);
+  cursor: pointer;
+  padding: 8px 0;
+  width: 60px;
+  text-align: left;
+  transition: color var(--transition), border-color var(--transition);
+
+  &:last-of-type {
+    margin-left: 24px;
+    text-align: right;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(214, 218, 230, 0.6);
+    border-bottom-color: rgba(214, 218, 230, 0.6);
+  }
+
+  &--active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+}

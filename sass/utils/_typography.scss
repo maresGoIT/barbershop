@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--text-font-family);
 }
@@ -22,6 +18,16 @@ h2 {
   letter-spacing: 0.05em;
 }
 
-ul {
-  list-style-type: none;
+.small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.copyrighted-text {
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: #595d6a;
 }

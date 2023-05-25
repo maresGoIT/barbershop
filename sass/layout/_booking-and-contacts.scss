@@ -1,0 +1,19 @@
+/* Booking and Contact Section */
+.booking-and-contacts {
+  background-color: #191c26;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.working-hours {
+  margin-top: 70px;
+
+  &__description {
+    margin-top: 20px;
+  }
+}

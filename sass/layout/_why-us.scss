@@ -1,0 +1,42 @@
+/* Why Us */
+.why-us__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-us__feature {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+
+  &:nth-child(2n) {
+    margin-top: 75px;
+  }
+}
+
+.why-us__feature-title {
+  color: #303030;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+}
+
+.why-us__feature-title sup {
+  color: var(--text-active);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  top: -24px;
+}
+
+.why-us__feature-description {
+  width: 122px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}

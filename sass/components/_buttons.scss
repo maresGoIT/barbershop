@@ -1,0 +1,79 @@
+.button {
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 16px;
+  padding: 12px 38px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.button--about-section {
+  margin-top: 40px;
+}
+
+.button--book-a-service {
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-left: 40px;
+  padding: 12px 24px;
+  transition: background-color var(--transition), color var(--transition);
+
+  &:focus,
+  &:hover {
+    background-color: #ff6c00;
+  }
+}
+
+.button--from-prices {
+  margin-top: 50px;
+}
+
+.button--from-modal {
+  background: $accent-color;
+  border: 1px solid darken($accent-color, 5%);
+  color: #fff;
+  padding: 12px 38px;
+
+  &:focus,
+  &:hover {
+    background: darken($accent-color, 5%);
+    border: 1px solid darken($accent-color, 10%);
+  }
+}
+
+.button--transparent {
+  background: transparent;
+  border: 1px solid #ff6c00;
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+  }
+}
+
+.button--close {
+  background: transparent;
+  border: none;
+  color: var(--text-alternate-color);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  right: 16px;
+  top: 16px;
+  font-size: 32px;
+  transition: opacity var(--transition);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

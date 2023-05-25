@@ -1,19 +1,36 @@
+$dark-text: #303030;
+$white-text: #fff;
+$accent-color: #ff6c00;
+
 :root {
-  --link-color: #ffffff;
-  --accent-color: $accent-color;
-  --text-active: #ff6c00;
-  --link-hover-color: #f0883e;
-  --link-active-color: #ff6c00;
-  --link-social-color: $dark-text;
-  --link-social--hover-color: #ff6c00;
-  --social-icon-color: #303030;
-  --social-icon--hover-color: #ff6c00;
+  --accent-color: #{$accent-color};
+  --text-active: #{$accent-color};
+
+  /* Links */
+  --link-color: #{$white-text};
+  --link-color--hover: #f0883e;
+  --link-color--active: #{$accent-color};
+  --link-from-aside-color: #{$dark-text};
+  --link-from-aside-color--hover: #{$accent-color};
+  --link-address-color: #9da4bd;
+  --link-address-color--hover: #{$white-text};
+  --link-footer-color: #{$dark-text};
+  --link-footer-color--hover: #f0883e;
+
+  --from-aside-icon-color: #{$dark-text};
+  --from-aside-icon--hover-color: #{$accent-color};
   --text-font-family: "Open Sans", sans-serif;
   --heading-font-family: "Raleway", sans-serif;
   --text-color: #9da4bd;
-  --text-alternate-color: ##303030;
-  --subheading-color: #9da4bd99;
-  --heading-color: #ffffff;
-  --heading-alternate-color: #303030;
+  --text-alternate-color: #{$dark-text};
+  --form-color: #{$dark-text};
+  --form-color--focused: #{$accent-color};
+  --form-color--light: rgba(157, 164, 189, 0.4);
+  --form-color--focused--light: #{$white-text};
+  --heading-color: #{$white-text};
+  --heading-alternate-color: #{$dark-text};
+  --sub-heading-color: #9da4bd99;
+
+  --modal-bg: #fff;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

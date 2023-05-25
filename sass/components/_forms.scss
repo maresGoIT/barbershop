@@ -1,0 +1,156 @@
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin-top: 44px;
+}
+
+.form__row {
+  display: flex;
+  gap: 30px;
+}
+
+.form__title {
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--form-color--light);
+}
+
+.form__group {
+  flex: 1;
+  position: relative;
+}
+
+.form__label {
+  color: var(--form-color--light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 11px;
+  top: -8px;
+  left: 0;
+  transition: top var(--transition);
+}
+
+.form__input {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--form-color--light);
+  padding: 8px 0;
+  color: var(--form-color--light);
+  width: 100%;
+  text-align: left;
+  transition: border var(--transition), color var(--transition);
+
+  &::placeholder {
+    color: var(--form-color--light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 11px;
+    top: 16px;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    display: none;
+    top: 0;
+  }
+
+  &:focus {
+    color: var(--form-color--focused--light);
+    border-color: var(--form-color--focused--light);
+  }
+
+  &:focus::placeholder {
+    color: var(--form-color--focused--light);
+  }
+
+  &:required ~ .form__label::after {
+    content: "*";
+  }
+
+  &:focus ~ .form__label {
+    color: var(--form-color--focused--light);
+  }
+}
+
+.form--modal {
+  @extend .form;
+
+  .form__title {
+    color: var(--form-color);
+  }
+
+  .form__label {
+    color: var(--form-color);
+  }
+
+  .form__input {
+    border-bottom-color: 1px solid var(--form-color);
+    color: var(--form-color);
+
+    &::placeholder {
+      color: var(--form-color);
+    }
+
+    &:focus {
+      color: var(--form-color--focused);
+      border-color: var(--form-color--focused);
+    }
+
+    &:focus::placeholder {
+      color: var(--form-color--focused);
+    }
+
+    &:focus ~ .form__label {
+      color: var(--form-color--focused);
+    }
+  }
+}
+
+.form__input--number {
+  display: flex;
+  width: fit-content;
+
+  &:focus-within {
+    .form__label {
+      color: var(--form-color--focused);
+    }
+  }
+
+  div {
+    overflow: hidden;
+    padding-right: 12px;
+    border-bottom: 1px solid var(--heading-alternate-color);
+    display: flex;
+    order: 2;
+    flex: 2;
+  }
+
+  input,
+  select {
+    border: none;
+    background: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  input {
+    @extend .form__input;
+    width: 100%;
+  }
+
+  select {
+    @extend .form__input;
+    width: 50px;
+    color: var(--form-color--focused--light);
+  }
+}
+
+.form__input--number .form__label {
+  flex: 1;
+}

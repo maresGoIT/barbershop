@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
@@ -18,12 +14,12 @@
     <div class="container container--header">
       <!-- Logo and Social Links -->
       <aside class="global-aside">
-        <a class="link" href="index.html">
+        <a class="global-aside__logo link" href="index.html">
           <img src="images/logo.svg" alt="Logo" />
         </a>
         <div class="global-aside__links">
           <a
-            class="link link--social"
+            class="link link--from-aside"
             href="https://youtube.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -31,7 +27,7 @@
             Youtube
           </a>
           <a
-            class="link link--social"
+            class="link link--from-aside"
             href="https://instagram.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
@@ -48,39 +44,42 @@
           <nav class="global-header__nav">
             <ul class="global-header__menu">
               <li class="global-header__menu-item">
-                <a href="#about" class="link link--active link--global-header">About</a>
+                <a href="#about" class="link link--active">About</a>
               </li>
               <li class="global-header__menu-item">
                 <a href="#services" class="link">Services and Prices</a>
               </li>
-              <li class="global-header__menu-item"><a href="#barbers" class="link">Barbers</a></li>
+              <li class="global-header__menu-item">
+                <a href="#barbers" class="link">Barbers</a>
+              </li>
               <li class="global-header__menu-item">
                 <a href="#contacts" class="link">Contacts</a>
               </li>
             </ul>
             <div>
-              <a class="link link--phone-number" href="tel:+380441111111">+38 044 111 11 11</a>
+              <a class="link link--uppercase" href="tel:+380441111111">+38 044 111 11 11</a>
               <button data-modal-open class="button button--book-a-service">BOOK A SERVICE</button>
             </div>
           </nav>
         </header>
 
+        <!-- Hero Content -->
         <section class="section section--hero-section">
           <div class="section__description">
-            <div class="section__subheading">
+            <div class="section__sub-heading">
               <h3>
                 <span>A hair salon for men in Kyiv</span>
               </h3>
             </div>
-            <h1 class="hero-heading" title="BarberShop">BarberShop</h1>
-            <p class="hero-sub-heading">
+            <h1 class="hero__heading" title="BarberShop">BarberShop</h1>
+            <p class="hero__subheading">
               We are experts in trendy men's haircuts. <br />
               We work quickly, carefully, and tastefully.
             </p>
           </div>
-          <div class="form__control-buttons">
-            <button>Prev</button>
-            <button>Next</button>
+          <div class="slider-controls">
+            <button class="slider-controls__button">Prev</button>
+            <button class="slider-controls__button slider-controls__button--active">Next</button>
           </div>
         </section>
       </div>
@@ -98,10 +97,10 @@
             </div>
             <div>
               <div class="section__description">
-                <div class="section__subheading">
-                  <h3 class="section__subheading-text">About</h3>
+                <div class="section__sub-heading">
+                  <h3>About</h3>
                 </div>
-                <h2 class="section-heading">The Best Barbershop in Your City</h2>
+                <h2 class="section__heading">The Best Barbershop in Your City</h2>
                 <p>
                   If you want to add more confidence to your image, you are definitely in the right
                   place.
@@ -122,108 +121,107 @@
       </section>
 
       <!-- Services and Prices -->
-      <section id="services" class="section section--dark prices-section">
+      <section id="services" class="section section--dark prices">
         <div class="container">
           <div class="section__description">
-            <div class="section__subheading">
-              <img src="images/dash-light.png" alt="-" class="section__subheading-dash" />
-              <h3 class="section__subheading-text">
-                Spend time in the company of the best craftsmen
-              </h3>
+            <div class="section__sub-heading">
+              <h3>Spend time in the company of the best craftsmen</h3>
             </div>
-            <h2 class="section-heading">Services and Prices</h2>
+            <h2 class="section__heading">Services and Prices</h2>
           </div>
-          <div class="prices">
-            <ul class="prices-list">
-              <li>
+          <div class="prices__container">
+            <ul class="prices__list">
+              <li class="prices__list-item">
                 <span>Men's Haircut</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 300 UAH </span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Beard Trimt</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 200 UAH</span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Mustache Trim</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 200 UAH</span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Straight Razor Shave</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 200 UAH</span>
               </li>
             </ul>
-            <ul class="prices-list">
-              <li>
+            <ul class="prices__list">
+              <li class="prices__list-item">
                 <span>Trainee Haircut</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 50 UAH </span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Buzz Cut</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
                 <span>from 200 UAH</span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Kids Haircut (&lsaquo;12 y.o.)</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 300 UAH</span>
               </li>
-              <li>
+              <li class="prices__list-item">
                 <span>Gray Coverage</span>
-                <span class="prices-dash"></span>
+                <span class="prices__dash"></span>
 
                 <span>from 200 UAH</span>
               </li>
             </ul>
           </div>
           <div class="centered-content">
-            <button class="button button--book-a-service">Book a service</button>
+            <button data-modal-open class="button button--book-a-service button--from-prices">
+              Book a service
+            </button>
           </div>
         </div>
       </section>
 
       <!-- Old school -->
-      <section class="section section--light why-us-section">
+      <section class="section section--light why-us">
         <div class="container">
           <div class="section--with-two-columns">
             <div>
-              <div class="why-us-list">
-                <div class="feature">
-                  <h3 class="feature-title">600<sup>+</sup></h3>
-                  <div class="feature-description">Satisfied Customers per Day</div>
+              <div class="why-us__list">
+                <div class="why-us__feature">
+                  <h3 class="why-us__feature-title">600<sup>+</sup></h3>
+                  <div class="why-us__feature-description">Satisfied Customers per Day</div>
                 </div>
-                <div class="feature">
-                  <h3 class="feature-title">50<sup>+</sup></h3>
-                  <div class="feature-description">Excellent Service Awards</div>
+                <div class="why-us__feature">
+                  <h3 class="why-us__feature-title">50<sup>+</sup></h3>
+                  <div class="why-us__feature-description">Excellent Service Awards</div>
                 </div>
-                <div class="feature">
-                  <h3 class="feature-title">20<sup>+</sup></h3>
-                  <div class="feature-description">The Best Barbers of Kyiv</div>
+                <div class="why-us__feature">
+                  <h3 class="why-us__feature-title">20<sup>+</sup></h3>
+                  <div class="why-us__feature-description">The Best Barbers of Kyiv</div>
                 </div>
-                <div class="feature">
-                  <h3 class="feature-title">100<sup>+</sup></h3>
-                  <div class="feature-description">Gifts for Regular Customers</div>
+                <div class="why-us__feature">
+                  <h3 class="why-us__feature-title">100<sup>+</sup></h3>
+                  <div class="why-us__feature-description">Gifts for Regular Customers</div>
                 </div>
               </div>
             </div>
             <article>
-              <div class="section__subheading">
-                <h3 class="section__subheading-text">Old school</h3>
+              <div class="section__sub-heading">
+                <h3>Old school</h3>
               </div>
-              <h2 class="section-heading">Services and Prices</h2>
+              <h2 class="section__heading">Why do they come to us?</h2>
               <p>
-                Only good things are said about us. But it is better &#x2028; to see and feel 1 time
-                than to read 10 times.
+                Only good things are said about us. But it is better to see and feel 1 time than to
+                read 10 times.
               </p>
             </article>
           </div>
@@ -231,18 +229,18 @@
       </section>
 
       <!-- Our Barbers -->
-      <section id="barbers" class="section section--light section-with-gray-bg">
+      <section id="barbers" class="section section--light section--grey-bg barbers">
         <div class="container">
-          <div class="section__subheading">
-            <h3 class="section__subheading-text">for true connoisseurs of the atmosphere</h3>
+          <div class="section__sub-heading">
+            <h3>for true connoisseurs of the atmosphere</h3>
           </div>
-          <h2 class="section-heading">Our Barbers</h2>
-          <ul class="barbers-list">
-            <li>
+          <h2 class="section__heading">Our Barbers</h2>
+          <ul class="barbers__list">
+            <li class="barbers__list-item">
               <img src="./images/barber_john-smith.jpg" alt="John Smith" /><br />
               <span>John Smith<br /></span>
               <em>Extreme Barber</em>
-              <div class="icons-list">
+              <div class="icons-list icons-list--from-barbers">
                 <a href="https://instagram.com" class="icon link" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -266,11 +264,11 @@
               </div>
             </li>
 
-            <li>
+            <li class="barbers__list-item">
               <img src="./images/barber_michele-doe.png" alt="John Smith" /><br />
               Michele Doe<br />
               <em>Extreme Barber</em>
-              <div class="icons-list">
+              <div class="icons-list icons-list--from-barbers">
                 <a href="https://instagram.com" class="link icon" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -294,11 +292,11 @@
               </div>
             </li>
 
-            <li>
+            <li class="barbers__list-item">
               <img src="./images/barber_alan-black.png" alt="John Smith" /><br />
               Alan Black<br />
               <em>Extreme Barber</em>
-              <div class="icons-list">
+              <div class="icons-list icons-list--from-barbers">
                 <a href="https://instagram.com" class="link icon" aria-label="Instagram">
                   <svg>
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -326,12 +324,12 @@
       </section>
 
       <!-- Motto -->
-      <section class="section section--light">
+      <section class="section section--light motto">
         <div class="container">
-          <div class="section__subheading">
-            <h3 class="section__subheading-text">In Latin, "barba" means "beard"</h3>
+          <div class="section__sub-heading">
+            <h3>In Latin, "barba" means "beard"</h3>
           </div>
-          <ul class="motto-cards">
+          <ul class="motto__cards">
             <li><img src="./images/motto_img1.png" alt="Frizer tunde parul" /></li>
             <li><img src="./images/motto_img2.png" alt="Frizer pregatind barba" /></li>
             <li><img src="./images/motto_img3.png" alt="Frizer sterge barba" /></li>
@@ -340,61 +338,72 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="booking-and-contact-section">
+      <div class="booking-and-contacts">
+        <div class="container container--booking-and-contacts">
           <!-- Book a section -->
-          <section class="section booking-form">
+          <section class="section section--from-booking">
             <h2>Book a Service</h2>
 
             <form class="form" name="book-a-service" autocomplete="off">
-              <div class="form-row">
-                <label class="form-group">
-                  <input placeholder="Name*" class="input" type="text" name="username" required />
-                  <span class="label-text">Name</span>
+              <div class="form__row">
+                <label class="form__group">
+                  <input
+                    placeholder="Name*"
+                    class="form__input"
+                    type="text"
+                    name="username"
+                    required
+                  />
+                  <span class="form__label">Name</span>
                 </label>
 
-                <label class="form-group">
+                <label class="form__group">
                   <input
                     placeholder="Telephone*"
-                    class="input"
+                    class="form__input"
                     type="tel"
                     name="telephone"
                     required
                   />
-                  <span class="label-text">Telephone</span>
+                  <span class="form__label">Telephone</span>
                 </label>
               </div>
-              <label class="form-group">
-                <textarea placeholder="Message" class="input" name="message" rows="3"></textarea>
-                <span class="label-text">Message</span>
+              <label class="form__group">
+                <textarea
+                  placeholder="Message"
+                  class="form__input"
+                  name="message"
+                  rows="3"
+                ></textarea>
+                <span class="form__label">Message</span>
               </label>
-              <button type="submit" class="button button-transparent">Send</button>
+              <button type="submit" class="button button--transparent">Send</button>
             </form>
           </section>
 
           <!-- Contacts -->
-          <section id="contacts" class="section contact-section">
+          <section id="contacts" class="section section--from-contacts">
             <h2>Contacts</h2>
-            <address class="contacts-address">
+            <address class="contacts__address">
               <a
-                class="contact-address-item link"
+                class="link link--from-address"
                 href="https://goo.gl/maps/v32BDD3dRUhPxnXa9?coh=178571&entry=tt"
               >
                 <i data-feather="map-pin"></i>
                 Main Street, 7A Kyiv, 08132
               </a>
-              <a class="contact-address-item link" href="tel:+380441111111">
+              <a class="link link--from-address" href="tel:+380441111111">
                 <i data-feather="phone"></i>
                 +38 044 111 11 11
               </a>
-              <a class="contact-address-item link" href="mailto:barbershop@email.com">
+              <a class="link link--from-address" href="mailto:barbershop@email.com">
                 <i data-feather="mail"></i>
                 barbershop@email.com
               </a>
             </address>
             <div class="working-hours">
-              <h3 class="section__subheading">working hours</h3>
-              <p>
+              <h3 class="section__sub-heading">working hours</h3>
+              <p class="working-hours__description">
                 Daily from <time datetime="9:00AM">9:00 AM</time> till
                 <time datetime="9:00AM">22:00 PM</time>
               </p>
@@ -407,13 +416,13 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
+        <div class="footer__content">
           <span class="copyrighted-text">&#169; Copyright 2022</span>
-          <ul class="footer-link-list">
+          <ul class="footer__links">
             <li>
               <a
                 href="https://instagram.com"
-                class="link"
+                class="link link--from-footer"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -423,7 +432,7 @@
             <li>
               <a
                 href="https://youtube.com"
-                class="link"
+                class="link link--from-footer"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -437,33 +446,33 @@
 
     <!-- Modal -->
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
-        <button class="button close-btn" data-modal-close>&times;</button>
+      <div class="modal__content">
+        <button class="button button--close" data-modal-close>&times;</button>
 
-        <form class="form-modal" name="contact-form" autocomplete="off">
-          <h3>Add your details</h3>
-          <label class="form-group">
-            <input class="input" type="text" name="firstName" required autocomplete="off" />
-            <span class="label-text">First Name</span>
+        <form class="form--modal" name="contact-form" autocomplete="off">
+          <h3 class="form__title">Add your details</h3>
+          <label class="form__group">
+            <input class="form__input" type="text" name="firstName" required autocomplete="off" />
+            <span class="form__label">First Name</span>
           </label>
-          <label class="form-group">
-            <input class="input" type="text" name="lastName" />
-            <span class="label-text">Last Name</span>
+          <label class="form__group">
+            <input class="form__input" type="text" name="lastName" />
+            <span class="form__label">Last Name</span>
           </label>
-          <label class="form-group">
-            <div class="telephone-number">
-              <span class="label-text">Telephone</span>
-              <div class="telephone-input-wrapper">
+          <label class="form__group">
+            <div class="form__input--number">
+              <span class="form__label">Telephone</span>
+              <div>
                 <select name="countryCode">
                   <option value="ro">+4</option>
                   <option value="hu">+36</option>
                   <option value="it">+39</option>
                 </select>
-                <input class="telephone-code" type="number" name="phone" />
+                <input type="number" name="phone" />
               </div>
             </div>
           </label>
-          <button class="button submit-btn" type="submit">Book now</button>
+          <button class="button button--from-modal" type="submit">Book now</button>
         </form>
       </div>
     </div>

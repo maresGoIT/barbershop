@@ -25,7 +25,7 @@ main .button--book-a-service {
   margin-left: 0;
 }
 
-.section-heading {
+.section__heading {
   margin-top: 20px;
   font-size: 42px;
   line-height: 49.31px;
@@ -33,7 +33,7 @@ main .button--book-a-service {
   color: #ffffff;
 }
 
-.section-heading + * {
+.section__heading + * {
   margin-top: 20px;
 }
 
@@ -45,60 +45,54 @@ main .button--book-a-service {
   color: var(--text-color);
 }
 
-.section address .link {
-  color: var(--text-color);
-}
-
-.section address .link:hover,
-.section address .link:focus {
-  color: var(--link-color);
-}
-.section .section-sub-heading {
-  font-size: 11px;
-  line-height: 14.98px;
-  color: var(--subheading-color);
-}
-
-.section h1,
-.section h2 {
-  color: var(--heading-color);
-}
-
 .section--light {
   background: #ffffff;
   color: #555555;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
 }
 
+.section__sub-heading {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sub-heading-color);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: var(--sub-heading-color);
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+}
+
 .section--light h1,
-.section--light .section-heading,
-.section--light .section-sub-heading {
+.section--light .section__heading {
   color: var(--heading-alternate-color);
 }
 
-.section__subheading {
-  display: flex;
-  align-items: center;
-}
+.section--light .section__sub-heading {
+  color: var(--heading-alternate-color);
 
-.section__dash {
-  width: 60px;
-  height: 1px;
-}
-
-.section__subheading h3 {
-  margin-left: 20px;
-  text-transform: uppercase;
+  &::before {
+    background: var(--heading-alternate-color);
+  }
 }
 
 .section__description > * + * {
   margin-top: 20px;
 }
 
-.section-with-gray-bg {
+.section--grey-bg {
   background: #f7f7f7;
 }
 
@@ -122,26 +116,13 @@ main .button--book-a-service {
   margin-left: 30px;
 }
 
-.section__subheading::before {
-  content: "";
-  display: inline-block;
-  background: rgba(157, 164, 189, 0.4);
-  height: 1px;
-  width: 60px;
-  margin-right: 20px;
-  vertical-align: middle;
+.section--from-contacts {
+  background: url("../images/contact-section-bg.webp");
+  flex: 1 0 auto;
+  padding-left: 100px;
 }
 
-.section__subheading {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+.section--from-booking {
+  background: transparent;
+  flex: 1 0 auto;
 }

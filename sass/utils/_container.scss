@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container--header {
+  background: #363636;
+  display: flex;
+}
+
+.container--booking-and-contacts {
+  display: flex;
+}
+
+.centered-content {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

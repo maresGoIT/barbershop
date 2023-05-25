@@ -1,0 +1,23 @@
+.barbers__list {
+  display: flex;
+}
+
+.barbers__list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.barbers__list-item + .barbers__list-item {
+  margin-left: 30px;
+}
+
+.barbers__list-item em {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-active);
+}

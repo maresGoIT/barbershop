@@ -1,0 +1,25 @@
+.global-aside {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 155px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.global-aside__logo {
+  transition: transform var(--transition);
+
+  &:focus,
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.global-aside__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}

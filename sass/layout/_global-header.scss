@@ -1,0 +1,14 @@
+.global-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-header__menu {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+.global-header__menu-item + .global-header__menu-item {
+  margin-left: 40px;
+}
