@@ -1,14 +1,15 @@
+/* Stil pentru mobil, si pentru 3 */
 .hero {
   background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url("../images/hero-slider-img1.jpg");
   flex: 1 0 auto;
-  padding: 40px 55px 40px 100px;
+  padding: 40px 31px;
 
   &__heading {
     font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
     letter-spacing: 0.05em;
+    font-size: 48px;
+    line-height: 56px;
     color: var(--heading-color);
     margin-top: 20px;
   }
@@ -18,5 +19,21 @@
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #9da4bd;
+  }
+}
+
+/* Stil doar pentru tableta */
+@media screen and (min-width: $tablet-breakpoint) {
+}
+
+/* Stil doar pentru Desktop */
+@media screen and (min-width: $desktop-breakpoint) {
+  .hero {
+    padding: 40px 55px 40px 100px;
+
+    &__heading {
+      font-size: 72px;
+      line-height: 85px;
+    }
   }
 }

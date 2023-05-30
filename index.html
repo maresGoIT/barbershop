@@ -14,9 +14,6 @@
     <div class="container container--header">
       <!-- Logo and Social Links -->
       <aside class="global-aside">
-        <a class="global-aside__logo link" href="index.html">
-          <img src="images/logo.svg" alt="Logo" />
-        </a>
         <div class="global-aside__links">
           <a
             class="link link--from-aside"
@@ -39,9 +36,15 @@
       </aside>
 
       <div class="hero">
+        <a class="global-header__logo-mobile link" href="index.html">
+          <img src="images/logo-white.svg" alt="Logo" />
+        </a>
+
         <!-- Header -->
         <header class="global-header">
-          <nav class="global-header__nav">
+          <nav class="global-header__nav js-menu-container">
+            <button class="js-close-menu button button--close-menu">&times;</button>
+
             <ul class="global-header__menu">
               <li class="global-header__menu-item">
                 <a href="#about" class="link link--active">About</a>
@@ -61,6 +64,25 @@
               <button data-modal-open class="button button--book-a-service">BOOK A SERVICE</button>
             </div>
           </nav>
+          <button
+            class="js-open-menu button button--toggle-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </header>
 
         <!-- Hero Content -->

@@ -1,25 +1,40 @@
 .global-aside {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 155px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 55px;
+  display: none;
+  position: relative;
 }
 
-.global-aside__logo {
-  transition: transform var(--transition);
+/* Stiluri pentru tableta */
+@media screen and (min-width: $tablet-breakpoint) {
+  .global-aside {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    flex: 0 1 90px;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+  }
 
-  &:focus,
-  &:hover {
-    transform: scale(1.2);
+  .global-aside__logo {
+    transition: transform var(--transition);
+
+    &:focus,
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .global-aside__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 }
 
-.global-aside__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+@media screen and (min-width: $desktop-breakpoint) {
+  .global-aside {
+    flex-basis: 90px;
+    padding: 55px;
+  }
 }

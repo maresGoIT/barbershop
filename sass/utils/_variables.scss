@@ -2,6 +2,11 @@ $dark-text: #303030;
 $white-text: #fff;
 $accent-color: #ff6c00;
 
+/* Responsive Breakpoints */
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1020px;
+
 :root {
   --accent-color: #{$accent-color};
   --text-active: #{$accent-color};
@@ -16,6 +21,7 @@ $accent-color: #ff6c00;
   --link-address-color--hover: #{$white-text};
   --link-footer-color: #{$dark-text};
   --link-footer-color--hover: #f0883e;
+  --link-header-mobile: #{$dark-text};
 
   --from-aside-icon-color: #{$dark-text};
   --from-aside-icon--hover-color: #{$accent-color};

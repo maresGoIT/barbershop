@@ -101,3 +101,8 @@ meter {
 :where(dialog:modal) {
   all: revert;
 }
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
