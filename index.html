@@ -5,105 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Hero Section -->
-    <div class="container container--header">
-      <!-- Logo and Social Links -->
-      <aside class="global-aside">
-        <div class="global-aside__links">
-          <a
-            class="link link--from-aside"
-            href="https://youtube.com"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            Youtube
+    <div class="container">
+      <div class="container--header">
+        <!-- Logo and Social Links -->
+        <aside class="global-aside">
+          <a class="global-aside__logo link" href="index.html">
+            <img src="images/logo.svg" alt="Logo" />
           </a>
-          <a
-            class="link link--from-aside"
-            href="https://instagram.com"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            Instagram
-          </a>
-          <img class="global-aside__separator" src="images/header_section-divider.png" alt="|" />
-        </div>
-      </aside>
-
-      <div class="hero">
-        <a class="global-header__logo-mobile link" href="index.html">
-          <img src="images/logo-white.svg" alt="Logo" />
-        </a>
-
-        <!-- Header -->
-        <header class="global-header">
-          <nav class="global-header__nav js-menu-container">
-            <button class="js-close-menu button button--close-menu">&times;</button>
-
-            <ul class="global-header__menu">
-              <li class="global-header__menu-item">
-                <a href="#about" class="link link--active">About</a>
-              </li>
-              <li class="global-header__menu-item">
-                <a href="#services" class="link">Services and Prices</a>
-              </li>
-              <li class="global-header__menu-item">
-                <a href="#barbers" class="link">Barbers</a>
-              </li>
-              <li class="global-header__menu-item">
-                <a href="#contacts" class="link">Contacts</a>
-              </li>
-            </ul>
-            <div>
-              <a class="link link--uppercase" href="tel:+380441111111">+38 044 111 11 11</a>
-              <button data-modal-open class="button button--book-a-service">BOOK A SERVICE</button>
-            </div>
-          </nav>
-          <button
-            class="js-open-menu button button--toggle-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="global-aside__links">
+            <a
+              class="link link--from-aside"
+              href="https://youtube.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
             >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </header>
+              Youtube
+            </a>
+            <a
+              class="link link--from-aside"
+              href="https://instagram.com"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <img class="global-aside__separator" src="images/header_section-divider.png" alt="|" />
+          </div>
+        </aside>
 
-        <!-- Hero Content -->
-        <section class="section section--hero-section">
-          <div class="section__description">
-            <div class="section__sub-heading">
-              <h3>
-                <span>A hair salon for men in Kyiv</span>
-              </h3>
+        <div class="hero">
+          <a class="global-header__logo-mobile link" href="index.html">
+            <img src="images/logo-white.svg" alt="Logo" />
+          </a>
+
+          <!-- Header -->
+          <header class="global-header">
+            <nav class="global-header__nav js-menu-container">
+              <button class="js-close-menu button button--close-menu">&times;</button>
+
+              <ul class="global-header__menu">
+                <li class="global-header__menu-item">
+                  <a href="#about" class="link link--active">About</a>
+                </li>
+                <li class="global-header__menu-item">
+                  <a href="#services" class="link">Services and Prices</a>
+                </li>
+                <li class="global-header__menu-item">
+                  <a href="#barbers" class="link">Barbers</a>
+                </li>
+                <li class="global-header__menu-item">
+                  <a href="#contacts" class="link">Contacts</a>
+                </li>
+              </ul>
+              <div>
+                <a class="link link--uppercase" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button data-modal-open class="button button--book-a-service">
+                  BOOK A SERVICE
+                </button>
+              </div>
+            </nav>
+            <button
+              class="js-open-menu button button--toggle-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </header>
+
+          <!-- Hero Content -->
+          <section class="section section--hero-section">
+            <div class="section__description">
+              <div class="section__sub-heading">
+                <h3>
+                  <span>A hair salon for men in Kyiv</span>
+                </h3>
+              </div>
+              <h1 class="hero__heading" title="BarberShop">BarberShop</h1>
+              <p class="hero__subheading">
+                We are experts in trendy men's haircuts. <br />
+                We work quickly, carefully, and tastefully.
+              </p>
             </div>
-            <h1 class="hero__heading" title="BarberShop">BarberShop</h1>
-            <p class="hero__subheading">
-              We are experts in trendy men's haircuts. <br />
-              We work quickly, carefully, and tastefully.
-            </p>
-          </div>
-          <div class="slider-controls">
-            <button class="slider-controls__button">Prev</button>
-            <button class="slider-controls__button slider-controls__button--active">Next</button>
-          </div>
-        </section>
+            <div class="slider-controls">
+              <button class="slider-controls__button">Prev</button>
+              <button class="slider-controls__button slider-controls__button--active">Next</button>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
 

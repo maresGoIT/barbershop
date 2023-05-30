@@ -4,7 +4,7 @@
 }
 
 /* Stiluri pentru tableta */
-@media screen and (min-width: $tablet-breakpoint) {
+@media screen and (min-width: $mobile-breakpoint) {
   .global-aside {
     display: flex;
     background: white;

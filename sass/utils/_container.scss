@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
-  width: 480px;
+  max-width: 480px;
+  overflow-x: hidden;
 }
 
 .container--header {
@@ -20,18 +21,12 @@
 
 @media screen and (min-width: $mobile-breakpoint) {
   .container {
-    width: 480px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
   .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: $desktop-breakpoint) {
-  .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }

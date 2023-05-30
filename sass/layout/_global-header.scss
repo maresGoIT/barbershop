@@ -1,7 +1,4 @@
 .global-header {
-  display: flex;
-  align-items: flex-end;
-
   &__logo-mobile {
     display: block;
     position: absolute;
@@ -33,7 +30,7 @@
   }
 }
 
-@media screen and (min-width: $tablet-breakpoint) {
+@media screen and (min-width: $mobile-breakpoint) {
   .global-header {
     &__logo-mobile {
       display: none;
@@ -46,6 +43,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .global-header__nav .is-open {
+    display: none;
   }
 
   .global-header__menu {

@@ -79,11 +79,14 @@
 }
 
 .button--toggle-menu {
+  position: absolute;
+  right: 30px;
   padding: 0;
   width: 24px;
 }
 
 .button--close-menu {
+  display: none;
   color: #303030;
   padding: 0;
   width: 24px;
