@@ -16,4 +16,14 @@
   &__description {
     margin-top: 20px;
   }
+
+  .section__sub-heading {
+    color: var(--heading-color);
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .contacts__address {
+    flex-direction: column;
+  }
 }

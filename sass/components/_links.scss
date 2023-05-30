@@ -24,6 +24,15 @@
   color: var(--link-color--active);
 }
 
+.link--dark-text {
+  color: var(--link-from-aside-color);
+
+  &:hover,
+  &:focus {
+    color: var(--link-from-aside-color--hover);
+  }
+}
+
 .link--from-aside,
 .link--from-aside:visited {
   color: var(--link-from-aside-color);

@@ -6,6 +6,7 @@
 .prices__container {
   margin-top: 46px;
   display: flex;
+  flex-direction: column;
 }
 
 .prices__list {
@@ -41,4 +42,10 @@
 
 .prices__list-item > span + span {
   margin-left: 6px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .prices__container {
+    flex-direction: row;
+  }
 }

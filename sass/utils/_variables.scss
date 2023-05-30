@@ -15,6 +15,9 @@ $desktop-breakpoint: 1200px;
   --link-color: #{$white-text};
   --link-color--hover: #f0883e;
   --link-color--active: #{$accent-color};
+  --link-dark-text-color: #{$dark-text};
+  --link-dark-text-color--hover: #{$accent-color};
+
   --link-from-aside-color: #{$dark-text};
   --link-from-aside-color--hover: #{$accent-color};
   --link-address-color: #9da4bd;

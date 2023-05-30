@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 55px;
+  padding: 30px;
 }
 
 .footer__links {
@@ -10,8 +10,14 @@
   display: flex;
   gap: 40px;
   position: relative;
+}
 
-  &::before {
+@media screen and (min-width: $tablet-breakpoint) {
+  .footer__content {
+    padding: 55px;
+  }
+
+  .footer__links::before {
     content: "";
     background: #303030;
     height: 1px;

@@ -40,3 +40,26 @@
   line-height: 15px;
   text-align: center;
 }
+
+/* Reverse order */
+.why-us .section--with-two-columns {
+  > :nth-child(1) {
+    order: 2;
+  }
+
+  > :nth-child(2) {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .why-us .section--with-two-columns {
+    > :nth-child(1) {
+      order: 1;
+    }
+
+    > :nth-child(2) {
+      order: 2;
+    }
+  }
+}

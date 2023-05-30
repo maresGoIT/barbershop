@@ -1,7 +1,39 @@
 .global-header {
-  &__logo-mobile {
-    display: block;
-    position: absolute;
+  .link {
+    color: var(--link-dark-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--link-dark-text-color--hover);
+    }
+  }
+
+  .button--book-a-service {
+    color: var(--link-dark-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--link-color);
+    }
+  }
+}
+
+.global-header__logo-mobile {
+  display: block;
+  position: absolute;
+  top: 30px;
+}
+
+.global-header__extra-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 64px;
+
+  .button--book-a-service {
+    margin-left: 0;
   }
 }
 
@@ -13,7 +45,8 @@
     position: fixed;
     height: 100%;
     top: 0;
-    left: 143px;
+    right: 0;
+    max-width: 60%;
     flex-direction: column;
     background: #ffffff;
     padding: 60px 40px;
@@ -27,6 +60,14 @@
     .global-header__menu-item .link {
       color: var(--link-header-mobile);
     }
+
+    & + .button--toggle-menu {
+      display: none;
+    }
+
+    .button--close-menu {
+      display: inline-flex;
+    }
   }
 }
 
@@ -39,6 +80,26 @@
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
+  .global-header {
+    .link {
+      color: var(--link-color);
+
+      &:hover,
+      &:focus {
+        color: var(--link-color--hover);
+      }
+    }
+
+    .button--book-a-service {
+      color: var(--link-color);
+
+      &:hover,
+      &:focus {
+        color: var(--link-color);
+      }
+    }
+  }
+
   .global-header__nav {
     display: flex;
     justify-content: space-between;
@@ -56,6 +117,11 @@
 
   .global-header__menu-item + .global-header__menu-item {
     margin-left: 40px;
+  }
+
+  .global-header__extra-links {
+    margin-top: 0;
+    flex-direction: row;
   }
 
   .button--toggle-menu {

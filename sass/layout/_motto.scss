@@ -3,6 +3,13 @@
     margin-top: 40px;
     display: flex;
     gap: 30px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .motto__cards {
+    justify-content: flex-start;
   }
 }

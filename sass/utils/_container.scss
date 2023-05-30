@@ -10,6 +10,7 @@
 
 .container--booking-and-contacts {
   display: flex;
+  flex-direction: column;
 }
 
 .centered-content {
@@ -27,5 +28,9 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .container {
     max-width: 1200px; /* Maximul pentru desktop */
+  }
+
+  .container--booking-and-contacts {
+    flex-direction: row;
   }
 }

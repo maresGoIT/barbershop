@@ -1,5 +1,15 @@
+.barbers {
+  text-align: center;
+
+  .section__sub-heading {
+    justify-content: center;
+  }
+}
+
 .barbers__list {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .barbers__list-item {
@@ -10,14 +20,24 @@
   letter-spacing: 0.02em;
 }
 
-.barbers__list-item + .barbers__list-item {
-  margin-left: 30px;
-}
-
 .barbers__list-item em {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-active);
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .barbers {
+    text-align: left;
+
+    .barbers__list {
+      flex-direction: row;
+    }
+
+    .section__sub-heading {
+      justify-content: flex-start;
+    }
+  }
 }

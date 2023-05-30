@@ -1,13 +1,12 @@
-/* Section Generic */
 .section {
   background: #363636;
   color: var(--text-color);
   letter-spacing: 0.02em;
-  padding: 130px 55px;
+  padding: 100px 30px;
 
   &--hero-section {
-    background: transparent;
     margin-top: 204px;
+    background: transparent;
     padding: 0;
   }
 
@@ -19,39 +18,31 @@
       color: #ffffff;
     }
   }
-}
 
-main .button--book-a-service {
-  margin-left: 0;
-}
+  .section__heading {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
 
-.section__heading {
-  margin-top: 20px;
-  font-size: 42px;
-  line-height: 49.31px;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
+  .section__heading + * {
+    margin-top: 20px;
+  }
 
-.section__heading + * {
-  margin-top: 20px;
-}
-
-.section address {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+  .section address {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
 }
 
 .section--light {
   background: #ffffff;
   color: #555555;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .section__sub-heading {
@@ -98,10 +89,8 @@ main .button--book-a-service {
 
 .section--with-two-columns {
   display: flex;
-}
-
-.section--with-two-columns > *:nth-child(2) {
-  margin-left: 64px;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .section--with-two-columns > * {
@@ -109,20 +98,82 @@ main .button--book-a-service {
 }
 
 .section-images {
-  display: flex;
+  display: none;
 }
 
-.section-images img + img {
-  margin-left: 30px;
+@media screen and (min-width: $mobile-breakpoint) {
+  .section--with-two-columns {
+    flex-direction: row;
+  }
+
+  .section-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section--from-about .section-images {
+    gap: 30px;
+
+    img {
+      width: 330px;
+      height: 235px;
+    }
+  }
 }
 
 .section--from-contacts {
+  display: flex;
+  flex-direction: column;
   background: url("../images/contact-section-bg.webp");
   flex: 1 0 auto;
   padding-left: 100px;
+  justify-content: space-between;
 }
 
 .section--from-booking {
   background: transparent;
   flex: 1 0 auto;
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .section--from-contacts {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .section--from-contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  /* Section Generic */
+  .section {
+    padding: 130px 55px;
+  }
+
+  .section--from-about .section-images {
+    img {
+      width: 270px;
+      height: 445px;
+    }
+  }
+
+  .section--with-two-columns {
+    gap: 64px;
+  }
+
+  main .button--book-a-service {
+    margin-left: 0;
+  }
+
+  .section__heading {
+    font-size: 42px;
+    line-height: 49.31px;
+  }
+
+  .section-images {
+    flex-direction: row;
+  }
 }
