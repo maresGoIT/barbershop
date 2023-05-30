@@ -1,7 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 480px;
-  overflow-x: hidden;
+  max-width: 480px; // Mobile First, deci latimea maxima pana ajunge la maximul pentru mobil */
 }
 
 .container--header {
@@ -21,12 +20,12 @@
 
 @media screen and (min-width: $mobile-breakpoint) {
   .container {
-    max-width: 768px;
+    max-width: 768px; /* Maximul pentru tableta */
   }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
   .container {
-    max-width: 1200px;
+    max-width: 1200px; /* Maximul pentru desktop */
   }
 }
