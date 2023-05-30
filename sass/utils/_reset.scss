@@ -104,6 +104,7 @@ meter {
 
 body,
 html {
+  overflow-x: hidden;
   min-width: 100vw;
   min-height: 100vh;
 }
