@@ -1,7 +1,10 @@
 /* Stil pentru mobil, si pentru 3 */
 .hero {
-  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url("../images/hero-slider-img1.jpg") no-repeat;
+  background-image: url("../images/hero-slider-img1/hero-img-m.jpg"); /* Fallback */
+  background-image: image-set(
+    "../images/hero-slider-img1/hero-img-m.jpg" 1x,
+    "../images/hero-slider-img1/hero-img-m@2x.jpg" 2x
+  );
   background-size: cover;
   flex: 1 0 auto;
   padding: 40px 31px;
@@ -24,12 +27,22 @@
 }
 
 /* Stil doar pentru tableta */
-@media screen and (min-width: $tablet-breakpoint) {
+@media screen and (min-width: $mobile-breakpoint) {
+  .hero {
+    background-image: image-set(
+      "../images/hero-slider-img1/hero-img-t.jpg" 1x,
+      "../images/hero-slider-img1/hero-img-t@2x.jpg" 2x
+    );
+  }
 }
 
 /* Stil doar pentru Desktop */
 @media screen and (min-width: $desktop-breakpoint) {
   .hero {
+    background-image: image-set(
+      "../images/hero-slider-img1/hero-img-d.jpg" 1x,
+      "../images/hero-slider-img1/hero-img-d@2x.jpg" 2x
+    );
     padding: 40px 55px 40px 100px;
 
     &__heading {

@@ -120,7 +120,22 @@
         <div class="container">
           <div class="section--with-two-columns">
             <div class="section-images">
-              <img src="images/about_img1.jpg" alt="Frizer tunde barba" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    images/about-img1/about-image1-d.jpg,
+                    images/about-img1/about-image1-d@2x.jpg 2x
+                  "
+                />
+                <!-- Tablete -->
+                <source
+                  srcset="images/about-img1/about-image1-t.jpg images/about-img1/about-image1-t@2x.jpg 2x"
+                />
+                <img src="images/about-img1/about-image1-t.jpg" alt="Flowers" style="width: auto" />
+              </picture>
+
               <img src="images/about_img2.png" alt="Frizer taie barba" />
             </div>
             <div>
@@ -358,7 +373,35 @@
             <h3>In Latin, "barba" means "beard"</h3>
           </div>
           <ul class="motto__cards">
-            <li><img src="./images/motto_img1.png" alt="Frizer tunde parul" /></li>
+            <li>
+              <!-- Picture replacement -->
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    images/about-img1/about-image1-d.jpg,
+                    images/about-img1/about-image1-d@2x.jpg 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    images/about-img1/about-image1-t.jpg,
+                    images/about-img1/about-image1-t@2x.jpg 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  srcset="
+                    images/about-img1/about-image1-m.jpg,
+                    images/about-img1/about-image1-m@2x.jpg 2x
+                  "
+                />
+                <img src="./images/motto_img1-m.jpg" alt="Frizer tunde parul" />
+              </picture>
+            </li>
             <li><img src="./images/motto_img2.png" alt="Frizer pregatind barba" /></li>
             <li><img src="./images/motto_img3.png" alt="Frizer sterge barba" /></li>
             <li><img src="./images/motto_img4.png" alt="Frizer realizeaza conturul" /></li>
